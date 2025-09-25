@@ -4,7 +4,7 @@ function volume_sphere() {
 	let radius = parseFloat(radiusInput);
 	let volume;
 	if(isNaN(radius) ||radius< 0){
-		volume = 0;
+		volume = "NaN";
 	}
 	else{
 		volume = (4/3)* Math.PI * Math.pow(radius,3);
